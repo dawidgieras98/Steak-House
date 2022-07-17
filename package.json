@@ -4,7 +4,7 @@
   "description": "",
   "source": "./src/app.js",
   "scripts": {
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build src/index.html",
     "dev": "parcel ./src/index.html",
     "compile": "sass --watch --no-source-map ./src/styles/style.scss ./src/styles/style.css"
   },
