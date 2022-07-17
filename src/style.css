@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*==============
+Typography
+================*/
+/*==============
+Buttons
+================*/
+/*==============
+Colors and filters
+================*/
+/*==============
+Mobile Navigation
+================*/
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Sans-serif;
+  background-color: #e5e5e5;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 80%;
+  padding: 0.5rem 0;
+}
+
+.main_menu {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #ffffff;
+}
+.main_menu .left_nav {
+  display: flex;
+  align-items: center;
+}
+.main_menu .right_nav li {
+  display: flex;
+  flex-direction: column;
+}
+.main_menu .right_nav li img {
+  height: 1rem;
+}
+.main_menu ul {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 2rem;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main_menu li {
+  list-style-type: none;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+}
+.main_menu li a {
+  font-size: 0.875rem;
+  line-height: 1.55rem;
+}
+.main_menu li:hover {
+  background-color: #920303;
+  cursor: pointer;
+}
+.main_menu li:hover a {
+  color: white;
+}
+.main_menu li:hover img {
+  filter: invert(86%) sepia(53%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(104%);
+}
+.main_menu li:hover .lastIcon {
+  filter: none;
+}
+.main_menu li .lastIcon {
+  filter: invert(99%) sepia(17%) saturate(802%) hue-rotate(197deg) brightness(114%) contrast(100%);
+}
+.main_menu a {
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.main_menu a:hover {
+  background-color: #920303;
+}
+
+/*==============
+Mobile Navigation
+================*/
+.mobile_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.mobile_bar h2 {
+  font: 0.75rem;
+  margin-left: 0.1rem;
+}
+
+#hamburger {
+  display: none;
+}
+
+.hamburger_menu_wrapper {
+  position: fixed;
+  top: 1.1rem;
+  left: 0.7rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 15;
+  font-family: "Poppins", Sans-serif;
+  background: linear-gradient(to bottom, rgb(178, 116, 80), rgb(178, 116, 80) 20%, #fb3333 20%, rgb(243, 243, 53) 40%, rgb(100, 52, 24) 40%, rgb(100, 52, 24) 60%, green 60%, #fb3333 80%, rgb(178, 116, 80) 80%, rgb(178, 116, 80) 100%);
+}
+.hamburger_menu_wrapper hr {
+  background: #e5e5e5;
+  height: 0.1rem;
+}
+.hamburger_menu_wrapper .hamburger_menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: #920303;
+  transition: 0.3s;
+  padding: 0rem 0.1rem;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.hamburger_menu_wrapper h3 {
+  color: #e5e5e5;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+}
+.hamburger_menu_wrapper li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+.hamburger_menu_wrapper a {
+  color: #e5e5e5;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#hamburger:checked + .hamburger_menu_wrapper .hamburger_menu {
+  visibility: visible;
+  left: 0;
+}
+#hamburger:checked ~ .overlay {
+  visibility: visible;
+  opacity: 0.6;
+}
+
+/*==============
+Carousel Section
+================*/
+.carousel_wrapper {
+  background-color: #e5e5e5;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow-x: visible;
+}
+
+/*==============
+Carousel left side
+================*/
+.carousel_left {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  max-width: 100%;
+  align-content: flex-start;
+  margin-left: 10%;
+}
+.carousel_left h1 {
+  line-height: 4.06rem;
+  font-size: calc(3.5rem - 150%);
+}
+.carousel_left p {
+  font-size: calc(1.25rem - 50%);
+  line-height: 1.55rem;
+}
+
+/*==============
+Carousel right side
+================*/
+.carousel_right {
+  background-color: #fff;
+}
+
+/*==============
+Pagination Styling - Swiper
+================*/
+.swiper {
+  max-width: 80vw;
+  margin: 0 auto;
+  overflow: visible;
+  background-color: #e5e5e5;
+}
+.swiper .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.swiper-pagination-horizontal {
+  position: relative !important;
+  display: flex;
+  margin-top: 3rem;
+  gap: 1.3125rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url("../assets/Oval Copy 5.svg") !important;
+  border: 1px solid black !important;
+}
+
+.swiper-pagination-bullet {
+  background-image: url("../assets/Oval Copy 2.svg") !important;
+}
+
+/*==============
+Banner Section
+================*/
+.marquee_wrapper {
+  width: 100vw;
+}
+.marquee_wrapper .marquee {
+  width: 90vw;
+  height: 30%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.marquee_wrapper .marquee_container {
+  height: 100%;
+  display: flex;
+  animation: scrolling 15s linear infinite;
+  justify-content: space-between;
+}
+.marquee_wrapper .marquee_container li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 18vw;
+  max-height: 100%;
+}
+
+/*==============
+Ads Sections
+================*/
+.ads_wrapper {
+  display: flex;
+  max-width: 90vw;
+  margin: 0 auto;
+  justify-content: center;
+  color: white;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.ads_wrapper .local_ad,
+.ads_wrapper .uber_ad {
+  width: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.ads_wrapper .local_ad {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/dana-devolk-x2cNcfz_xXU-unsplash.png");
+}
+.ads_wrapper .uber_ad {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/aplikacja.png");
+}
+.ads_wrapper .left_local,
+.ads_wrapper .left_uber {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  max-width: 50%;
+  flex-wrap: wrap;
+  padding: 1.75rem 6rem;
+  mix-blend-mode: normal;
+}
+.ads_wrapper .box {
+  display: flex;
+  gap: 0.5rem;
+}
+.ads_wrapper .box img {
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.ads_wrapper .box img:hover {
+  transform: scale(1.12);
+}
+
+/*==============
+Buttons and overlays
+================*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  background: black;
+  z-index: 12;
+}
+
+.red {
+  background-color: #920303;
+  color: white;
+  padding: 0rem;
+}
+
+.black {
+  background-color: black;
+  color: white;
+  padding: 0rem;
+}
+
+.order_btn {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 12rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.order_btn:hover {
+  transform: scale(1.1);
+}
+
+/*==============
+Animations - banner
+================*/
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90vw);
+  }
+}
+@keyframes scrollingMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-183%);
+  }
+}
+/*==============
+Media Queries
+================*/
+@media screen and (min-width: 768px) {
+  .carousel_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel_left {
+    max-width: 50%;
+  }
+  .carousel_left h1 {
+    font-size: 3.5rem;
+  }
+  .carousel_left p {
+    font-size: 1.25rem;
+    padding-right: 9rem;
+  }
+  .carousel_right {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1295px) {
+  .main_menu {
+    display: flex;
+  }
+  .hamburger_menu_wrapper,
+.mobile_bar {
+    display: none;
+  }
+  .swiper-pagination-horizontal {
+    margin-top: 7rem !important;
+  }
+}
+@media screen and (max-width: 1295px) {
+  .carousel_wrapper {
+    flex-direction: column;
+  }
+  .carousel_wrapper .carousel_right {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .carousel_wrapper .carousel_left {
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .marquee {
+    width: 100%;
+    height: 10%;
+  }
+  .marquee .marquee_container {
+    gap: 3rem;
+    animation: scrollingMobile 21.96s linear infinite;
+  }
+  .marquee .marquee_container li img {
+    width: 15vw;
+  }
+  .ads_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .ads_wrapper p {
+    margin: 0px;
+    height: 7rem;
+  }
+  .ads_wrapper .local_ad {
+    width: 80vw;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png");
+  }
+  .ads_wrapper .local_ad .left_local {
+    align-content: center;
+  }
+  .ads_wrapper .uber_ad {
+    width: 80vw;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/aplikacja@2x.png");
+  }
+  .ads_wrapper .uber_ad .left_uber {
+    align-content: center;
+  }
+}
