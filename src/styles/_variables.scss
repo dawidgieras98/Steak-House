@@ -1,0 +1,59 @@
+/*==============
+Typography
+================*/
+
+$fontFamily: "Poppins", Sans-serif;
+
+// For desktop
+
+$buttonsFont: 0.9rem;
+$paragraphFont: 1.25rem;
+$paragraphLH: 1.55rem;
+$navFont: 0.875rem;
+$headFont: 3.5rem;
+$headLH: 4.06rem;
+
+// For mobile
+
+$mobileFont: 1.5rem;
+
+/*==============
+Buttons
+================*/
+
+$borderRadious: 10px;
+
+/*==============
+Colors and filters
+================*/
+
+$mainBgColor: #e5e5e5;
+$pureWhite: #ffffff;
+$accentColor: #920303;
+$filterWhite: invert(86%) sepia(53%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(104%);
+$filterBlack: invert(99%) sepia(17%) saturate(802%) hue-rotate(197deg) brightness(114%)
+  contrast(100%);
+$opacityImage: linear-gradient((90deg, rgba(0, 0, 0, 31.7%), rgba(0, 0, 0, 41%) 99.07%));
+
+/*==============
+Mobile Navigation
+================*/
+
+$marquee-width: 90vw;
+$marquee-height: 30%;
+$marquee-elements: 5;
+$marquee-elements-displayed: 5;
+$marquee-element-width: calc($marquee-width / $marquee-elements-displayed);
+$marquee-animation-duration: calc($marquee-elements * 3s);
+
+$marquee-width-mobiles: 100%;
+$marquee-height-mobiles: 10%;
+$marquee-elements-mobiles: 7.32;
+$marquee-elements-displayed-mobiles: 2;
+$marquee-element-width-mobiles: calc($marquee-width-mobiles / $marquee-elements-displayed-mobiles);
+$marquee-animation-duration-mobiles: calc($marquee-elements-mobiles * 3s);
+
+// Breakpoints
+
+$mobileSize: 768px;
+$tabletSize: 1295px;

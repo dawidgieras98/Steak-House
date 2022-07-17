@@ -1,0 +1,22 @@
+{
+  "name": "invo",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/app.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "compile": "sass --watch --no-source-map ./src/styles/style.scss ./src/styles/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "sass": "^1.53.0",
+    "swiper": "^8.3.1"
+  }
+}
