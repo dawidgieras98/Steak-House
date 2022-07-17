@@ -275,8 +275,8 @@ Banner Section
   width: 100vw;
 
   .marquee {
-    width: v.$marquee-width;
-    height: v.$marquee-height;
+    width: v.$marquee_width;
+    height: v.$marquee_height;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
@@ -285,7 +285,7 @@ Banner Section
   .marquee_container {
     height: 100%;
     display: flex;
-    animation: scrolling v.$marquee-animation-duration linear infinite;
+    animation: scrolling v.$marquee_animation-duration linear infinite;
     justify-content: space-between;
     li {
       list-style: none;
@@ -293,7 +293,7 @@ Banner Section
       justify-content: center;
       align-items: center;
       flex-shrink: 0;
-      width: v.$marquee-element-width;
+      width: v.$marquee_element-width;
       max-height: 100%;
     }
   }
@@ -405,7 +405,7 @@ Animations - banner
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-1 * v.$marquee-element-width * v.$marquee-elements));
+    transform: translateX(calc(-1 * v.$marquee_element-width * v.$marquee_elements));
   }
 }
 @keyframes scrollingMobile {
@@ -414,7 +414,7 @@ Animations - banner
   }
   100% {
     transform: translateX(
-      calc(-0.5 * v.$marquee-element-width-mobiles * v.$marquee-elements-mobiles)
+      calc(-0.5 * v.$marquee_element-width-mobiles * v.$marquee_elements-mobiles)
     );
   }
 }
@@ -485,12 +485,12 @@ Media Queries
   // Banner
 
   .marquee {
-    width: v.$marquee-width-mobiles;
-    height: v.$marquee-height-mobiles;
+    width: v.$marquee_width-mobiles;
+    height: v.$marquee_height-mobiles;
 
     .marquee_container {
       gap: 3rem;
-      animation: scrollingMobile v.$marquee-animation-duration-mobiles linear infinite;
+      animation: scrollingMobile v.$marquee_animation-duration-mobiles linear infinite;
       li img {
         width: 15vw;
       }

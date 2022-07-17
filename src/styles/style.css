@@ -124,19 +124,7 @@ Mobile Navigation
   margin: 0px;
   z-index: 15;
   font-family: "Poppins", Sans-serif;
-  background: linear-gradient(
-    to bottom,
-    rgb(178, 116, 80),
-    rgb(178, 116, 80) 20%,
-    #fb3333 20%,
-    rgb(243, 243, 53) 40%,
-    rgb(100, 52, 24) 40%,
-    rgb(100, 52, 24) 60%,
-    green 60%,
-    #fb3333 80%,
-    rgb(178, 116, 80) 80%,
-    rgb(178, 116, 80) 100%
-  );
+  background: linear-gradient(to bottom, rgb(178, 116, 80), rgb(178, 116, 80) 20%, #fb3333 20%, rgb(243, 243, 53) 40%, rgb(100, 52, 24) 40%, rgb(100, 52, 24) 60%, green 60%, #fb3333 80%, rgb(178, 116, 80) 80%, rgb(178, 116, 80) 100%);
 }
 .hamburger_menu_wrapper hr {
   background: #e5e5e5;
@@ -299,12 +287,10 @@ Ads Sections
   border-radius: 10px;
 }
 .ads_wrapper .local_ad {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%),
-    url("../assets/dana-devolk-x2cNcfz_xXU-unsplash.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/dana-devolk-x2cNcfz_xXU-unsplash.png");
 }
 .ads_wrapper .uber_ad {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%),
-    url("../assets/aplikacja.png");
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/aplikacja.png");
 }
 .ads_wrapper .left_local,
 .ads_wrapper .left_uber {
@@ -419,7 +405,7 @@ Media Queries
     display: flex;
   }
   .hamburger_menu_wrapper,
-  .mobile_bar {
+.mobile_bar {
     display: none;
   }
   .swiper-pagination-horizontal {
@@ -462,8 +448,7 @@ Media Queries
   .ads_wrapper .local_ad {
     width: 80vw;
     margin: 0 auto;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%),
-      url("../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png");
   }
   .ads_wrapper .local_ad .left_local {
     align-content: center;
@@ -471,8 +456,7 @@ Media Queries
   .ads_wrapper .uber_ad {
     width: 80vw;
     margin: 0 auto;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%),
-      url("../assets/aplikacja@2x.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.317), rgba(0, 0, 0, 0.41) 99.07%), url("../assets/aplikacja@2x.png");
   }
   .ads_wrapper .uber_ad .left_uber {
     align-content: center;

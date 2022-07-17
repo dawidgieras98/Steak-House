@@ -39,19 +39,19 @@ $opacityImage: linear-gradient((90deg, rgba(0, 0, 0, 31.7%), rgba(0, 0, 0, 41%) 
 Mobile Navigation
 ================*/
 
-$marquee-width: 90vw;
-$marquee-height: 30%;
-$marquee-elements: 5;
-$marquee-elements-displayed: 5;
-$marquee-element-width: calc($marquee-width / $marquee-elements-displayed);
-$marquee-animation-duration: calc($marquee-elements * 3s);
+$marquee_width: 90vw;
+$marquee_height: 30%;
+$marquee_elements: 5;
+$marquee_elements_displayed: 5;
+$marquee_element_width: calc($marquee_width / $marquee_elements_displayed);
+$marquee_animation_duration: calc($marquee_elements * 3s);
 
-$marquee-width-mobiles: 100%;
-$marquee-height-mobiles: 10%;
-$marquee-elements-mobiles: 7.32;
-$marquee-elements-displayed-mobiles: 2;
-$marquee-element-width-mobiles: calc($marquee-width-mobiles / $marquee-elements-displayed-mobiles);
-$marquee-animation-duration-mobiles: calc($marquee-elements-mobiles * 3s);
+$marquee_width_mobiles: 100%;
+$marquee_height_mobiles: 10%;
+$marquee_elements_mobiles: 7.32;
+$marquee_elements_displayed_mobiles: 2;
+$marquee_element_width_mobiles: calc($marquee_width_mobiles / $marquee_elements_displayed_mobiles);
+$marquee_animation_duration_mobiles: calc($marquee_elements_mobiles * 3s);
 
 // Breakpoints
 
