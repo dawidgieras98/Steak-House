@@ -280,6 +280,8 @@ Ads Sections
 }
 .ads_wrapper .local_ad,
 .ads_wrapper .uber_ad {
+  position: relative;
+  max-height: 100%;
   width: 50%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -296,11 +298,17 @@ Ads Sections
 .ads_wrapper .left_uber {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
+  align-content: space-evenly;
   max-width: 50%;
   flex-wrap: wrap;
   padding: 1.75rem 6rem;
-  mix-blend-mode: normal;
+}
+.ads_wrapper .left_local p {
+  padding-right: 9rem;
+}
+.ads_wrapper .empty_box {
+  max-width: 50%;
 }
 .ads_wrapper .box {
   display: flex;
@@ -452,6 +460,9 @@ Media Queries
   }
   .ads_wrapper .local_ad .left_local {
     align-content: center;
+  }
+  .ads_wrapper .local_ad p {
+    padding-right: 0;
   }
   .ads_wrapper .uber_ad {
     width: 80vw;

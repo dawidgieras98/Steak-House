@@ -287,6 +287,7 @@ Banner Section
     display: flex;
     animation: scrolling v.$marquee_animation-duration linear infinite;
     justify-content: space-between;
+
     li {
       list-style: none;
       display: flex;
@@ -313,6 +314,8 @@ Ads Sections
 
   .local_ad,
   .uber_ad {
+    position: relative;
+    max-height: 100%;
     width: 50%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -332,19 +335,31 @@ Ads Sections
   .left_uber {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: center;
+    align-content: space-evenly;
     max-width: 50%;
     flex-wrap: wrap;
     padding: 1.75rem 6rem;
-    mix-blend-mode: normal;
+  }
+
+  .left_local {
+    p {
+      padding-right: 9rem;
+    }
+  }
+
+  .empty_box {
+    max-width: 50%;
   }
 
   .box {
     display: flex;
     gap: 0.5rem;
+
     img {
       transition: 0.4s ease;
       cursor: pointer;
+
       &:hover {
         transform: scale(1.12);
       }
@@ -449,14 +464,20 @@ Media Queries
 }
 
 @media screen and (min-width: v.$tabletSize) {
+  // Navbar
+
   .main_menu {
     display: flex;
   }
+
+  // Hamburger menu
 
   .hamburger_menu_wrapper,
   .mobile_bar {
     display: none;
   }
+
+  // Swiper
 
   .swiper-pagination-horizontal {
     margin-top: 7rem !important;
@@ -502,6 +523,7 @@ Media Queries
   .ads_wrapper {
     display: flex;
     flex-direction: column;
+
     p {
       margin: 0px;
       height: 7rem;
@@ -510,8 +532,13 @@ Media Queries
       width: 80vw;
       margin: 0 auto;
       background-image: v.$opacityImage, url("../assets/dana-devolk-x2cNcfz_xXU-unsplash@2x.png");
+
       .left_local {
         align-content: center;
+      }
+
+      p {
+        padding-right: 0;
       }
     }
     .uber_ad {
